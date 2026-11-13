@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Personal Profile Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main class="card">
+            <h1>Personal Profile</h1>
+            <p class="subtitle">Fill in your details and submit to generate your profile</p>
+            
+            <form action="ProfileServlet" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g Ali bin Abu" required>
+                
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId" placeholder="e.g 2024183759" required>
+                
+                <label for="program">Program</label>
+                <input type="text" id="program" name="program" placeholder="e.g CS230" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g name@student.uitm.edu.my" required>
+                
+                <label for="hobbies">Hobbies</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="e.g Reading, Coding, Badminton">
+                
+                <label for="introduction">Short Self-Introduction</label>
+                <textarea id="introduction" name="introduction" rows="5" maxlength="500" placeholder="Tell us a little about yourself..."></textarea>
+                
+                <button type="submit">Generate Profile</button>
+            </form>
+        </main>
+    </body>
+</html>
